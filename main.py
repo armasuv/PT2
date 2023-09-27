@@ -10,10 +10,13 @@ question = True
 
 #On choisis un nombre aléatoire
 
-nombre_aleatoire = random.randint(1, 1000)
+nbr1 = int(input("Entrez un premier nombre:"))
+nbr2 = int(input("Entrez un deuxième nombre:"))
+
+nombre_aleatoire = random.randint(nbr1, nbr2)
 
 #Dit le contexte
-print("J’ai choisi un nombre au hasard entre 0 et 1000. \n À vous de le deviner...")
+print("J’ai choisi un nombre au hasard entre %d et %d. \n À vous de le deviner..." % (nbr1, nbr2))
 
 #On utilise la fonction while pour poser la question
 
